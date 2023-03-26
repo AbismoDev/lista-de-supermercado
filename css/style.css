@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+body{
+    background-color: #01030E;
+}
+
+header{
+    width: 100%;
+    background-color: #01030E;
+    text-align: center;
+    padding: 20px 2%;
+}
+
+section{
+    height: calc(100vh - 163px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.container-app{
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000018;
+    box-shadow: 0 0 3px 1px #111177;
+}
+
+.cadastro-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entrada-dados{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-dados input{
+    height: 40px;
+    width: calc(50% - 10px);
+    border: 0;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.entrada-dados input:focus{
+    outline: none;
+}
+
+.entrada-dados input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+.botao-lista{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.botao-lista input{
+    height: 40px;
+    width: calc(50% - 10px);
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #030329;
+    box-shadow: 0 0 3px 1px #3b3be0;
+}
+
+.container-lista{
+    margin-top: 20px;
+    overflow-y: auto;
+    height: 200px;
+}
+
+.container-lista::-webkit-scrollbar{
+    background-color: white;
+    width: 5px;
+}
+
+.container-lista::-webkit-scrollbar-thumb{
+    background-color: #111177;
+}
+
+.item-cadastrado{
+    display: flex;
+    justify-content: space-between;
+    background-color: #030329;
+    border-bottom: 1px solid #3b3be0;
+    padding: 10px;
+    color: white;
+}
+
+.item-cadastrado:last-of-type{    
+    border: 0;
+}
+
+.nome-produto p{
+    text-transform: capitalize;
+}
+
+.total-lista{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-lista h3{
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 2%;
+    background-color: #01030E;
+    text-align: center;
+}
+
+.link-rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-rodape{
+    max-width: 200px;
+    width: 100%;
+}
+
+.nav-rodape ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-rodape ul li{
+    list-style: none;
+}
+
+.nav-rodape a, .creditos a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.nav-rodape a:hover, .creditos a:hover{
+    opacity: .7;
+}
+
+.creditos{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.creditos p{
+    color: white;
+}

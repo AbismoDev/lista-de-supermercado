@@ -1,0 +1,22 @@
+@media (max-width: 720px){
+    .entrada-dados, .botao-lista{
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+
+    .entrada-dados input, .botao-lista input{        
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .entrada-dados input:first-of-type, .botao-lista input:first-of-type{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    .container-lista{
+        height: 100px;
+    }
+}
