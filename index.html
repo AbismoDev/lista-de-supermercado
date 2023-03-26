@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTES PERSONALIZADAS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Cadastro Lista de Compras</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.abismodev.com" target="_blank">
+                <img class="logo" src="assets/logo.svg"
+                alt="Logo AbismoDev" title="AbismoDev">
+            </a>
+        </header>
+        <main>
+            <section>
+                <div class="container-app">
+                    <div class="cadastro-lista">
+                        <div class="entrada-dados">
+                            <input type="text" name="nome-produto" id="nome-produto" placeholder="Nome do produto">
+                            <input type="number" name="preco-produto" id="preco-produto" placeholder="Preço do produto">
+                        </div>
+                        <div class="botao-lista">
+                            <input type="button" value="CADASTRAR" id="cadastro-item">
+                            <input type="button" value="ESVAZIAR LISTA" id="limpar-lista">
+                        </div>
+                    </div>
+                    <div class="container-lista">
+                    </div>
+                    <div class="total-lista">
+                        <h3>TOTAL:</h3>
+                        <h3 id="somaTotal">R$ 0,00</h3>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-footer">
+                <div class="link-rodape">
+                    <nav class="nav-rodape">
+                        <ul>
+                            <li><a href="https://github.com/AbismoDev" target="_blank">Github</a></li>
+                            <li><a href="https://abismodev.com/" target="_blank">Portifólio</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="creditos">
+                    <p>Site desenvolvido com <img class="icon-coracao" src="assets/icon-coracao.svg" alt="amor" title="Amor"> por <a href="https://www.instagram.com/welli.18" target="_blank">AbismoDev</a>.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
